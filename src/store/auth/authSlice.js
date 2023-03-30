@@ -22,7 +22,7 @@ export const authSlice = createSlice({
 
         },
     logout: ( state, { payload } ) => {
-      state.status = 'Non Authenticated';
+      state.status = 'not-authenticated';
       state.email = null;
       state.displayName = null;
       state.photoURL = null;
@@ -36,4 +36,3 @@ export const authSlice = createSlice({
 })
 
 export const { login, logout, checkingCredentials } = authSlice.actions
-export default authSlice.reducer
