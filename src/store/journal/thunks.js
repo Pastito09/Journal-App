@@ -15,6 +15,7 @@ export const startNewNote = () => {
             title: '',
             body: '',
             date: new Date().getTime(),
+            imagesUrls: [],
         }
 
         const newDoc = doc( collection( FirebaseDB, `${ uid }/journal/notes` ) ) ;

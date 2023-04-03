@@ -3,7 +3,7 @@
 import { AddOutlined } from "@mui/icons-material"
 import { IconButton } from "@mui/material"
 import { useDispatch, useSelector } from "react-redux"
-import { savingNewNote, startNewNote } from "../../store/journal"
+import { startNewNote } from "../../store/journal"
 import { JournalLayout } from "../layout/JournalLayout"
 import { NothingSelectedView, NoteView } from "../views"
 
